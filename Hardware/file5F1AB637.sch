@@ -1,0 +1,140 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:HF3-53 K1
+U 1 1 5F1ABA81
+P 6550 4150
+F 0 "K1" V 5983 4150 50  0000 C CNN
+F 1 "HF3-53" V 6074 4150 50  0000 C CNN
+F 2 "Relay_SMD:Relay_SPDT_AXICOM_HF3Series_50ohms_Pitch1.27mm" H 7680 4120 50  0001 C CNN
+F 3 "http://hiqsdr.com/images/3/3e/Axicom-HF3.pdf" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR05
+U 1 1 5F1AD62F
+P 6100 4450
+F 0 "#PWR05" H 6100 4200 50  0001 C CNN
+F 1 "GNDA" H 6105 4277 50  0000 C CNN
+F 2 "" H 6100 4450 50  0001 C CNN
+F 3 "" H 6100 4450 50  0001 C CNN
+	1    6100 4450
+	0    1    1    0   
+$EndComp
+Text HLabel 7350 4250 2    50   Output ~ 10
+RX
+Text HLabel 7350 4450 2    50   Input ~ 10
+TX
+Text HLabel 5750 4350 0    50   BiDi ~ 10
+ANT
+Wire Wire Line
+	5750 4350 6250 4350
+Wire Wire Line
+	6850 4250 7350 4250
+Wire Wire Line
+	6850 4450 7350 4450
+Wire Wire Line
+	6100 4450 6250 4450
+$Comp
+L Toshiba:SSM3K15AFU Q1
+U 1 1 5F237AD3
+P 4850 4350
+F 0 "Q1" H 4955 4396 50  0000 L CNN
+F 1 "SSM3K15AFU" H 4955 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4950 4250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/408/SSM3K15AFU_datasheet_en_20140301-1151126.pdf" H 4950 4250 50  0001 C CNN
+	1    4850 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3950 4350 0    50   Input ~ 10
+VCTRL
+Wire Wire Line
+	3950 4350 4150 4350
+Wire Wire Line
+	4150 4550 4150 4350
+Connection ~ 4150 4350
+Wire Wire Line
+	4150 4350 4550 4350
+Wire Wire Line
+	4150 4850 4150 5050
+$Comp
+L power:GNDA #PWR03
+U 1 1 5F242550
+P 4150 5050
+F 0 "#PWR03" H 4150 4800 50  0001 C CNN
+F 1 "GNDA" H 4155 4877 50  0000 C CNN
+F 2 "" H 4150 5050 50  0001 C CNN
+F 3 "" H 4150 5050 50  0001 C CNN
+	1    4150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR04
+U 1 1 5F2427E8
+P 4850 4750
+F 0 "#PWR04" H 4850 4500 50  0001 C CNN
+F 1 "GNDA" H 4855 4577 50  0000 C CNN
+F 2 "" H 4850 4750 50  0001 C CNN
+F 3 "" H 4850 4750 50  0001 C CNN
+	1    4850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Yageo:RT0603FRE0710KL R1
+U 1 1 5F23E491
+P 4150 4700
+F 0 "R1" H 4050 4750 50  0000 R CNN
+F 1 "RT0603FRE0710KL" H 4050 4650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4150 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RT_1-to-0.01_RoHS_L_11-1669912.pdf" H 4150 4700 50  0001 C CNN
+	1    4150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4750 4850 4550
+Wire Wire Line
+	6250 3950 4850 3950
+Wire Wire Line
+	4850 3950 4850 4150
+$Comp
+L Nexperia:BAS21 D1
+U 1 1 5F2509D7
+P 4850 3600
+F 0 "D1" V 4804 3688 50  0000 L CNN
+F 1 "BAS21" V 4895 3688 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4850 3500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/916/BAS21-1815281.pdf" H 4850 3600 50  0001 C CNN
+	1    4850 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3750 4850 3950
+Connection ~ 4850 3950
+Wire Wire Line
+	4850 3450 4850 3250
+Wire Wire Line
+	4850 3250 7000 3250
+Wire Wire Line
+	7000 3250 7000 3950
+Wire Wire Line
+	7000 3950 6850 3950
+Wire Wire Line
+	7000 3250 7200 3250
+Connection ~ 7000 3250
+Text HLabel 7200 3250 2    50   Input ~ 0
+P5V
+$EndSCHEMATC
