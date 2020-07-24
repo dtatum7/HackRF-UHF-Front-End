@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# DNI_R_0603
+#
+DEF DNI_R_0603 R 0 40 Y Y 1 F N
+F0 "R" 50 50 50 H V L CNN
+F1 "DNI_R_0603" 50 -150 50 H I L CNN
+F2 "Resistor_SMD:R_0603_1608Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "DNI" 50 -50 50 H V L CNN "Resistance"
+DRAW
+P 2 1 1 0 0 -90 0 -100 N
+P 2 1 1 0 0 90 0 100 N
+P 5 1 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 1 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 1 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

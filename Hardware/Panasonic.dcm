@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERJ-3EKF71R5V
+D Thick Film Resistor - SMD 0603 71.5 ohms 1% AEC-Q200
+K 0603 71.5
+F https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf
+$ENDCMP
+#
+$CMP ERJ-3EKF95R3V
+D Thick Film Resistor - SMD 0603 95.3 ohms 1% AEC-Q200
+K 0603 95.3
+F https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf
+$ENDCMP
+#
+$CMP ERJ-3GEY0R00V
+D Thick Film Resistor - SMD 0603 Zero Ohm Jumper
+K 0603 Jumper
+F https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf
+$ENDCMP
+#
+#End Doc Library

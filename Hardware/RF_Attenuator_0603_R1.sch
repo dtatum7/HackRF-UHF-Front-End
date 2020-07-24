@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 16
+Sheet 17 22
 Title ""
 Date ""
 Rev ""
@@ -88,66 +88,9 @@ RF_IN
 Wire Wire Line
 	4650 3650 4850 3650
 Connection ~ 4850 3650
-Text Notes 8700 2700 2    50   ~ 0
-SMA connection to test PA 1st stage output / 2nd stage input
-Text HLabel 6750 3650 2    50   Output ~ 0
+Text HLabel 5750 3650 2    50   Output ~ 0
 RF_OUT
 Wire Wire Line
-	5550 3650 5750 3650
+	5750 3650 5550 3650
 Connection ~ 5550 3650
-Wire Wire Line
-	6550 3050 6550 3150
-$Comp
-L power:GNDA #PWR?
-U 1 1 5F2B6F4E
-P 6550 3150
-AR Path="/5F1FE880/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F19C733/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F19DDB3/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F11BFA6/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F11C68E/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F20A94F/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F20D989/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F20DB0B/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F2751D2/5F2B6F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5F19BA77/5F2B6F4E" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 6550 2900 50  0001 C CNN
-F 1 "GNDA" H 6555 2977 50  0000 C CNN
-F 2 "" H 6550 3150 50  0001 C CNN
-F 3 "" H 6550 3150 50  0001 C CNN
-	1    6550 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2850 6350 2850
-$Comp
-L RF:SMA_Wurth_60312242114510 J?
-U 1 1 5F2B6F3F
-P 6550 2850
-AR Path="/5F20DB0B/5F2B6F3F" Ref="J?"  Part="1" 
-AR Path="/5F20A94F/5F2B6F3F" Ref="J?"  Part="1" 
-AR Path="/5F2751D2/5F2B6F3F" Ref="J?"  Part="1" 
-AR Path="/5F19BA77/5F2B6F3F" Ref="J3"  Part="1" 
-F 0 "J3" H 6650 2825 50  0000 L CNN
-F 1 "SMA_Wurth_60312242114510" H 6650 2734 50  0000 L CNN
-F 2 "RF:SMA_Wurth_60312242114510" H 6550 2850 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/60312242114510.pdf" H 6550 2850 50  0001 C CNN
-	1    6550 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 3650 6550 3650
-$Comp
-L ATC:600S101_3-pad-R C44
-U 1 1 5F3AA005
-P 6150 3650
-F 0 "C44" H 6150 3809 50  0000 C CNN
-F 1 "600S101_3-pad-R" H 6150 3900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_3-pad-R" H 7050 2900 50  0001 C CNN
-F 3 "" V 6150 3600 50  0001 C CNN
-	1    6150 3650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6150 2850 6150 3250
 $EndSCHEMATC

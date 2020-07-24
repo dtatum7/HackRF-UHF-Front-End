@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 22 24
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Yageo:RT0603DRE0796R5L R8
+U 1 1 5F2183DD
+P 4850 4000
+F 0 "R8" H 4918 4046 50  0000 L CNN
+F 1 "RT0603DRE0796R5L" H 4900 3850 50  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 4000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RT_1-to-0.01_RoHS_L_11-1669912.pdf" H 4850 4000 50  0001 C CNN
+F 4 "96.5" H 4918 3955 50  0000 L CNN "Resistance"
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Yageo:RT0603DRE0796R5L R10
+U 1 1 5F2183DE
+P 5550 4000
+F 0 "R10" H 5618 4046 50  0000 L CNN
+F 1 "RT0603DRE0796R5L" H 5600 3850 50  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 4000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RT_1-to-0.01_RoHS_L_11-1669912.pdf" H 5550 4000 50  0001 C CNN
+F 4 "96.5" H 5618 3955 50  0000 L CNN "Resistance"
+	1    5550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Yageo:RT0603BRD0771R5L R9
+U 1 1 5F2183DF
+P 5200 3650
+F 0 "R9" V 4975 3650 50  0000 C CNN
+F 1 "RT0603BRD0771R5L" H 5625 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5200 3650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/PYu-RT_1-to-0.01_RoHS_L_11-1669912.pdf" H 5200 3650 50  0001 C CNN
+F 4 "71.5" V 5066 3650 50  0000 C CNN "Resistance"
+	1    5200 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR061
+U 1 1 5F36D682
+P 5550 4250
+F 0 "#PWR061" H 5550 4000 50  0001 C CNN
+F 1 "GNDA" H 5555 4077 50  0000 C CNN
+F 2 "" H 5550 4250 50  0001 C CNN
+F 3 "" H 5550 4250 50  0001 C CNN
+	1    5550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR060
+U 1 1 5F36D881
+P 4850 4250
+F 0 "#PWR060" H 4850 4000 50  0001 C CNN
+F 1 "GNDA" H 4855 4077 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4250 5550 4150
+Wire Wire Line
+	4850 4250 4850 4150
+Wire Wire Line
+	4850 3850 4850 3650
+Wire Wire Line
+	4850 3650 5050 3650
+Wire Wire Line
+	5350 3650 5550 3650
+Wire Wire Line
+	5550 3650 5550 3850
+Text HLabel 4650 3650 0    50   Input ~ 0
+RF_IN
+Wire Wire Line
+	4650 3650 4850 3650
+Connection ~ 4850 3650
+Text HLabel 5750 3650 2    50   Output ~ 0
+RF_OUT
+Wire Wire Line
+	5750 3650 5550 3650
+Connection ~ 5550 3650
+$EndSCHEMATC
