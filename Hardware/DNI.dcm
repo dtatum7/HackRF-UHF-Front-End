@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP DNI_C_0603
+D DNI 0603 Capacitor
+K DNI 0603
+$ENDCMP
+#
 $CMP DNI_R_0603
 D DNI 0603 Resistor
 K DNI 0603
